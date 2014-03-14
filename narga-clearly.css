@@ -224,3 +224,11 @@ body#ttrssMain #feedTree:hover {
 }
 
 
+/* right panel paragraph with, max-width : 650px; */
+div.cdmContentInner p {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+    max-width: 100%;
+}
+
