@@ -1,4 +1,4 @@
-tt-rss-theme-narga-cleary
+NARGA's Clearly Reader
 =========================
 
-NARGA's Clean Style for better reading with Tiny Tiny RSS. Inspirated from Feedly and other feed reader online services.
+NARGA's Clearly Reader: A simple designed Tiny Tiny RSS theme that is used to better reading. Inspirated from Feedly and other feed reader online services.
