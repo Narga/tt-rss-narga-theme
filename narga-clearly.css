@@ -170,3 +170,14 @@ body#ttrssMain #feedTree .counterNode.aux {
 	border-color : #5da423;
 }
 
+/* Main Toolbar */
+#main-toolbar {
+	background : #F0F0F0;
+	border-width : 0px 0px 1px 0px;
+	border-color : #ddd;
+	border-style : solid;
+	padding-left : 4px;
+	height : 26px;
+
+}
+
