@@ -232,6 +232,12 @@ div.cdmContentInner p {
     max-width: 100%;
 }
 
+/* select item with content area */
+div.cdmContent, div.postContent {
+    background:#FBFAF3;
+
+}
+
 /* Item attributes color: selected, marked, published */
 .cdm.expandable.Selected:not(.active),
 .hl.Selected {
