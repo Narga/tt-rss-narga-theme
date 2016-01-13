@@ -215,6 +215,32 @@ div.cdmContentInner p {
     max-width: 100%;
 }
 
+/* Styling item's attributes: selected, marked, published */
+./* select item with content area */
+div.cdmContent, div.postContent {
+    background:#FBFAF3;
+}
+
+cdm.expandable.Selected:not(.active),
+.hl.Selected {
+	z-index: 2;
+	border-color: #eda;
+	background: #fffad4;
+}
+
+.cdm.expandable.marked:not(.active),
+.hl.marked {
+	z-index: 2;
+	border-color: #E9B31B;
+	background: #FFFF99;
+}
+
+.cdm.expandable.published:not(.active),
+.hl.published {
+	z-index: 2;
+	border-color: #5DA423;
+	background: #DFF2BF;
+}
 
 
 /* Notification */
