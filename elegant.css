@@ -196,6 +196,25 @@ body#ttrssMain #feedTree:hover {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
+/* Main Toolbar */
+#main-toolbar {
+	background : #F0F0F0;
+	border-width : 0px 0px 1px 0px;
+	border-color : #ddd;
+	border-style : solid;
+	padding-left : 4px;
+	height : 26px;
+
+}
+
+/* right panel paragraph with, max-width : 650px; */
+div.cdmContentInner p {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+    max-width: 100%;
+}
+
 
 
 /* Notification */
