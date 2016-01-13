@@ -9,7 +9,7 @@ NARGA's Elementary Reader: A simple designed Tiny Tiny RSS theme that is used to
 From TT-RSS root directory
 ```bash
 $ cd themes
-$ wget https://raw.githubusercontent.com/narga/tt-rss-narga-theme/elegant.css
+$ wget https://raw.githubusercontent.com/Narga/tt-rss-narga-theme/master/elegant.css
 ```
 Switch to `elegant.css` in Preferences
 
@@ -18,7 +18,7 @@ Switch to `elegant.css` in Preferences
 - [x] typography
 - [x] loading proccessing
 - [x] styling notify
-- [ ] images, font include in CSS file
+- [x] images, font include in CSS file
 - [ ] optimize for better viewing on desktop and handheld device.
 - [ ] responsive layout
 
