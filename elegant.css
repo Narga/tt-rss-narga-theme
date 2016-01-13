@@ -7,7 +7,6 @@
 @import "../css/cdm.css";
 @import "../css/prefs.css";
 
-
 /* RESET */
 :focus {
 	outline: none;
@@ -36,12 +35,9 @@ img,
 
 /* Typography */
 
-html, body, button, input, select, textarea {
-	font-family: Bookerly, Candara, "Droid Sans", "Open Sans", "Helvetica Neue", "Liberation Sans", "DejaVu Sans", Helvetica, Arial, sans-serif;
-}
-
 body#ttrssMain, body#ttrssPrefs, body#ttrssLogin, body {
 	color: #444;
+	font-family: Bookerly, Candara, "Droid Sans", "Open Sans", "Helvetica Neue", "Liberation Sans", "DejaVu Sans", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -131,4 +127,31 @@ a:hover {
 	font-weight: bold;
 	text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
 }
+
+/* Feed Tree Count */
+body#ttrssMain #feedTree .counterNode {
+	font-weight : bold;
+	display : inline-block;
+	font-size : 10px;
+	text-align : center;
+	border : 1px solid #5da423;
+	color : white;
+	background : #5da423;
+	border-radius : 4px;
+	vertical-align : middle;
+	float : right;
+	position : relative;
+	line-height : 14px;
+	margin-right : 8px;
+	margin-top : 3px;
+	min-width : 23px;
+	height : 14px;
+}
+
+body#ttrssMain #feedTree .counterNode.aux {
+	background : #DFF2BF;
+	color : #5da423;
+	border-color : #5da423;
+}
+
 
