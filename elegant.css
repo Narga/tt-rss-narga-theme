@@ -242,6 +242,34 @@ cdm.expandable.Selected:not(.active),
 	background: #DFF2BF;
 }
 
+/* Label coloured */
+#feeds-holder img.feedIcon,
+#feeds-holder .labelColorIndicator {
+	position: relative;
+	top: -1px;
+	margin: 0 4px 0 0;
+	vertical-align: middle;
+}
+.labelColorIndicator,
+.labelColorIndicator2,
+.hlLabelRef {
+	display: inline-block;
+	border-radius: 99px;
+	background-color: #fec;
+	color: #444;
+	font-weight: bold;
+}
+.labelColorIndicator,
+.labelColorIndicator2 {
+	width: 13px;
+	height: 13px;
+	border: 1px solid rgba(0,0,0,.1);
+	text-align: center;
+	font-size: 10px;
+	line-height: 1;
+}
+
+
 
 /* Notification */
 #notify {
