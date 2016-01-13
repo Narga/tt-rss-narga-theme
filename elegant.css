@@ -154,6 +154,49 @@ body#ttrssMain #feedTree .counterNode.aux {
 	border-color : #5da423;
 }
 
+/* Feed Tree Scrollbar Intelihide */
+body#ttrssMain #feedTree { 
+	height : 100%;
+	overflow : hidden;
+    padding-right:12px;
+}
+
+body#ttrssMain #feedTree:hover { 
+    overflow-y: visible;
+    padding-right:0;
+}
+
+#main,
+#feeds-holder,
+#main #headlines-wrap-inner .dijitSplitter {
+	background: #eee;
+}
+#main .dijitSplitterHover,
+#main .dijitSplitterActive {
+	background: transparent;
+}
+
+/* Webkit Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
 
 /* Notification */
 #notify {
