@@ -1,0 +1,84 @@
+/* supports-version:16.1 */
+/* NARGA Tiny Tiny RSS Theme
+ * Elegant Style inspirated from Feedly, The Old Reader and others for better reading.
+ */
+@import "../css/tt-rss.css";
+@import "../css/dijit.css";
+@import "../css/cdm.css";
+@import "../css/prefs.css";
+
+
+/* RESET */
+:focus {
+	outline: none;
+}
+
+input[type="search"] {
+	-webkit-appearance: none;
+}
+
+textarea {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.claro .dijitBorderContainer,
+.claro .dijitSplitContainer-dijitContentPane,
+.claro .dijitBorderContainer-dijitContentPane {
+	padding: 0;
+}
+
+img,
+.claro .dijitSplitContainer-child,
+.claro .dijitBorderContainer-child {
+	border: 0;
+}
+
+/* Typography */
+
+html, body, button, input, select, textarea {
+	font-family: Bookerly, Candara, "Droid Sans", "Open Sans", "Helvetica Neue", "Liberation Sans", "DejaVu Sans", Helvetica, Arial, sans-serif;
+}
+
+body#ttrssMain, body#ttrssPrefs, body#ttrssLogin, body {
+	color: #444;
+}
+
+h1, h2, h3, h4, h5, h6,
+.player,
+body#ttrssMain #feedTree,
+div.postReply div.postTitle,
+.hl div.hlTitle a,
+div#floatingTitle a.title,
+div.cdm.expandable div.cdmHeader a.title, div.cdm.expandable.active div.cdmHeader a.title, div.cdm.expanded div.cdmHeader a.title, 
+#main-toolbar .actionChooser * {
+	text-rendering: optimizelegibility;
+    border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-color: #ecf4ff;
+
+}
+
+hr {
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-color: #ccc;
+}
+
+a {
+	color: #5b4;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/* Pre, Code font */
+#content-insert code, #headlines-frame code, .dijitContentPane code {
+	color: #009900;
+	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+	font-size: 12px;
+}
+
