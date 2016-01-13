@@ -155,3 +155,77 @@ body#ttrssMain #feedTree .counterNode.aux {
 }
 
 
+/* Notification */
+#notify {
+	display: table;
+	bottom: -80px;
+	right: 10px;
+	border: 0;
+	border-radius: 6px;
+	position: fixed;
+	font-size: 12px;
+	z-index: 99;
+	max-width: 270px;
+	min-width: 100px;
+	padding: 5px;
+	-width: 200px;
+	transition: bottom .3s ease-in-out;
+}
+
+#notify.visible {
+	bottom: 10px;
+}
+
+#notify img {
+	vertical-align: middle;
+	max-height: 14px;
+	background-size: auto 100%;
+	height: 16px;
+	padding-right: 16px;
+	width: 0;
+	display: inline-block;
+}
+
+#notify img[src*='images/indicator_white.gif'] {
+	background: url('images/spinner.gif') no-repeat;
+}
+
+#notify img[src*='images/cross.png'] {
+	background: url('images/cross.png') no-repeat;
+}
+
+#notify span.msg {
+	width: 100%;
+	word-break: break-word;
+}
+
+#notify span.close {
+	text-align: right;
+}
+
+#notify span {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 4px;
+}
+
+.notify {
+	border-color: #d7c47a;
+	background-color: #fff7d5;
+}
+
+.notify.progress {
+	border-color: #d7c47a;
+	background-color: #fff7d5;
+}
+
+.notify.info {
+	border-color: #88b0f0;
+	background-color: #ecf4ff;
+}
+
+.notify.error {
+	background-color: #ffcccc;
+	border-color: #ff0000;
+}
+
