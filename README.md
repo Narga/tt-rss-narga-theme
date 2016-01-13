@@ -16,6 +16,7 @@ Switch to `elegant.css` in Preferences
 ## TODO
 - [x] rewrite README.md
 - [x] typography
+- [x] loading proccessing
 - [ ] images, font include in CSS file
 - [ ] optimize for better viewing on desktop and handheld device.
 - [ ] responsive layout
