@@ -207,17 +207,29 @@ body#ttrssMain #feedTree:hover {
 
 }
 
-//* Feed Group Title Background */
+/* Feed Group Title Background */
 .cdmFeedTitle {
     background-color : #ecf4ff !important;
 }
 
-* right panel paragraph with, max-width : 650px; */
+/* right panel paragraph with, max-width : 650px; */
 div.cdmContentInner p {
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
     max-width: 100%;
+}
+
+/* Items list background color change when hover the mouse */
+#headlines-frame.wide .hl:hover > * {
+	background: transparent; /* only .hlTitle should have background color (next rule) */
+}
+.cdm.expandable:not(.active):hover .cdmHeader,
+.hl:hover > *,
+#headlines-frame.wide .hl:hover > *,
+.collapseBtn:hover {
+	background: rgba(0,0,0,.033);
+	cursor: pointer;
 }
 
 /* Styling item's attributes: selected, marked, published */
