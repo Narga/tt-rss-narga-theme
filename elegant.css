@@ -207,7 +207,12 @@ body#ttrssMain #feedTree:hover {
 
 }
 
-/* right panel paragraph with, max-width : 650px; */
+//* Feed Group Title Background */
+.cdmFeedTitle {
+    background-color : #ecf4ff !important;
+}
+
+* right panel paragraph with, max-width : 650px; */
 div.cdmContentInner p {
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
