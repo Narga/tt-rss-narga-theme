@@ -1,9 +1,9 @@
 NARGA's Elementary Reader Style
 ===============================
 
-NARGA's Elementary Reader: A simple designed Tiny Tiny RSS theme that is used to better reading. Inspirated from Feedly and other feed reader online services.
-
 ![expandable](https://raw.githubusercontent.com/Narga/tt-rss-narga-theme/master/screenshot.png)
+NARGA's Elementary Reader: A simple designed Tiny Tiny RSS theme that is used to better reading. Inspirated from Feedly and other feed reader online services.
+The color scheme of this theme based on [Material Design Color Pallet](http://zavoloklom.github.io/material-design-color-palette/colors.html)
 
 ## Instalation
 From TT-RSS root directory
@@ -18,6 +18,7 @@ Switch to `elegant.css` in Preferences
 - [x] typography
 - [x] loading proccessing
 - [x] styling notify
+- [x] coloring item's attributes
 - [x] images, font include in CSS file
 - [ ] optimize for better viewing on desktop and handheld device.
 - [ ] responsive layout

@@ -34,12 +34,7 @@ img,
 }
 
 /* Typography */
-
-body#ttrssMain, body#ttrssPrefs, body#ttrssLogin, body {
-	color: #444;
-	font-family: Bookerly, Candara, "Droid Sans", "Open Sans", "Helvetica Neue", "Liberation Sans", "DejaVu Sans", Helvetica, Arial, sans-serif;
-}
-
+body#ttrssMain, body#ttrssPrefs, body#ttrssLogin, body,
 h1, h2, h3, h4, h5, h6,
 .player,
 body#ttrssMain #feedTree,
@@ -48,21 +43,17 @@ div.postReply div.postTitle,
 div#floatingTitle a.title,
 div.cdm.expandable div.cdmHeader a.title, div.cdm.expandable.active div.cdmHeader a.title, div.cdm.expanded div.cdmHeader a.title, 
 #main-toolbar .actionChooser * {
-	text-rendering: optimizelegibility;
-    border-width: 0px 0px 1px 0px;
-	border-style: solid;
-	border-color: #ecf4ff;
-
+	font-family: Bookerly, Candara, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6,
 hr {
 	border-width: 0px 0px 1px 0px;
 	border-style: solid;
-	border-color: #ccc;
 }
 
 a {
-	color: #5b4;
+	color: #41924b;
 	text-decoration: none;
 }
 
@@ -73,7 +64,7 @@ a:hover {
 
 /* Pre, Code font */
 #content-insert code, #headlines-frame code, .dijitContentPane code {
-	color: #009900;
+	color: #028482;
 	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 	font-size: 12px;
 }
@@ -103,7 +94,7 @@ a:hover {
 
 #overlay_inner .insensitive {
 	margin: 0 0 20px;
-	color: #5da423;
+	color: #41924b;
 	padding: 1em;
 	text-align: center;
 	font-weight: bold;
@@ -119,7 +110,7 @@ a:hover {
 }
 
 #overlay_inner .dijitProgressBarTile {
-	background: #5da423;
+	background: #41924b;
 }
 
 #overlay_inner .dijitProgressBarLabel {
@@ -130,13 +121,12 @@ a:hover {
 
 /* Feed Tree Count */
 body#ttrssMain #feedTree .counterNode {
-	font-weight : bold;
 	display : inline-block;
 	font-size : 10px;
 	text-align : center;
-	border : 1px solid #5da423;
+	border : 1px solid #41924b;
 	color : white;
-	background : #5da423;
+	background : #41924b;
 	border-radius : 4px;
 	vertical-align : middle;
 	float : right;
@@ -150,8 +140,8 @@ body#ttrssMain #feedTree .counterNode {
 
 body#ttrssMain #feedTree .counterNode.aux {
 	background : #DFF2BF;
-	color : #5da423;
-	border-color : #5da423;
+	color : #41924b;
+	border-color : #41924b;
 }
 
 /* Feed Tree Scrollbar Intelihide */
@@ -238,11 +228,13 @@ div.cdmContent, div.postContent {
     background:#FBFAF3;
 }
 
-cdm.expandable.Selected:not(.active),
+.cdm.expandable.Selected:not(.active),
 .hl.Selected {
 	z-index: 2;
-	border-color: #eda;
-	background: #fffad4;
+
+    border-color: #41924b;
+	background: #AFEAAA;
+
 }
 
 .cdm.expandable.marked:not(.active),
@@ -255,9 +247,8 @@ cdm.expandable.Selected:not(.active),
 .cdm.expandable.published:not(.active),
 .hl.published {
 	z-index: 2;
-	border-color: #5DA423;
-	background: #DFF2BF;
-}
+	border-color: #EF7351;
+	background-color: #ffcccc;}
 
 /* Label coloured */
 #feeds-holder img.feedIcon,
@@ -285,8 +276,6 @@ cdm.expandable.Selected:not(.active),
 	font-size: 10px;
 	line-height: 1;
 }
-
-
 
 /* Notification */
 #notify {
