@@ -203,11 +203,12 @@ body#ttrssMain #feedTree:hover {
 }
 
 /* right panel paragraph with, max-width : 650px; */
-div.cdmContentInner p {
+.cdmContentInner {
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
-    max-width: 100%;
+    text-align: justify;
+    padding: 0 25px;
 }
 
 /* Items list background color change when hover the mouse */
