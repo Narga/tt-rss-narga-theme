@@ -6,10 +6,9 @@ NARGA's Elementary Reader: A simple designed Tiny Tiny RSS theme that is used to
 
 The color scheme of this theme based on [Material Design Color Pallete](http://zavoloklom.github.io/material-design-color-palette/colors.html)
 
-|   |  |
-| ------------- | ------------- |
-| #41924b  | #028482  |
-
+| ------------- | ------------- | --------- | ---------- |
+| #41924b       | #028482       | #ff0000   | #ffcccc    |
+| ------------- | ------------- | --------- | ---------- |
 ## Instalation
 From TT-RSS root directory
 ```bash
@@ -24,7 +23,7 @@ Switch to `elegant.css` in Preferences
 - [x] loading proccessing
 - [x] styling notify
 - [x] coloring item's attributes
-- [x] images, font include in CSS file
+- [ ] ~~images, font include in CSS file~~ (on hold)
 - [ ] optimize for better viewing on desktop and handheld device.
 - [ ] ~~responsive layout~~ (limited technology)
 
