@@ -43,7 +43,7 @@ div.postReply div.postTitle,
 div#floatingTitle a.title,
 div.cdm.expandable div.cdmHeader a.title, div.cdm.expandable.active div.cdmHeader a.title, div.cdm.expanded div.cdmHeader a.title, 
 #main-toolbar .actionChooser * {
-	font-family: Bookerly, Candara, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Bookerly, "San Francisco", Candara, "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
