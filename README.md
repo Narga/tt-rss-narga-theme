@@ -9,6 +9,7 @@ The color scheme of this theme based on [Material Design Color Pallete](http://z
 | --------- | -------- | -------- | ------- |
 
 | #41924b   | #028482  | #ff0000  | #ffcccc |
+| --------- | -------- | -------- | ------- |
 
 | --------- | -------- | -------- | ------- |
 
