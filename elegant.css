@@ -33,7 +33,7 @@ img,
 /* Typography */
 body#ttrssMain, body#ttrssPrefs, body#ttrssLogin, body {
 	color: #444;
-	Bookerly, "San Francisco", Candara, "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: Bookerly, "San Francisco", Candara, "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -45,7 +45,7 @@ div#floatingTitle a.title,
 div.cdm.expandable div.cdmHeader a.title, div.cdm.expandable.active div.cdmHeader a.title, div.cdm.expanded div.cdmHeader a.title, 
 #main-toolbar .actionChooser * {
 	text-rendering: optimizelegibility;
-	Bookerly, "San Francisco", Candara, "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: Bookerly, "San Francisco", Candara, "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 hr {
