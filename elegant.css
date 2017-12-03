@@ -1,11 +1,8 @@
-/* supports-version:16.1 */
+/* supports-version:17.4 */
 /* NARGA Tiny Tiny RSS Theme
  * Elegant Style inspirated from Feedly, The Old Reader and others for better reading.
  */
-@import "../css/tt-rss.css";
-@import "../css/dijit.css";
-@import "../css/cdm.css";
-@import "../css/prefs.css";
+@import "../css/default.css";
 
 /* RESET */
 :focus {
@@ -34,7 +31,11 @@ img,
 }
 
 /* Typography */
-body#ttrssMain, body#ttrssPrefs, body#ttrssLogin, body,
+body#ttrssMain, body#ttrssPrefs, body#ttrssLogin, body {
+	color: #444;
+	Bookerly, "San Francisco", Candara, "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6,
 .player,
 body#ttrssMain #feedTree,
@@ -43,18 +44,18 @@ div.postReply div.postTitle,
 div#floatingTitle a.title,
 div.cdm.expandable div.cdmHeader a.title, div.cdm.expandable.active div.cdmHeader a.title, div.cdm.expanded div.cdmHeader a.title, 
 #main-toolbar .actionChooser * {
-	font-family: Bookerly, "San Francisco", Candara, "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
+	text-rendering: optimizelegibility;
+	Bookerly, "San Francisco", Candara, "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6,
 hr {
 	border-width: 0px 0px 1px 0px;
 	border-style: solid;
+	border-color: #ccc;
 }
 
 a {
-	color: #41924b;
-	text-decoration: none;
+	color: #5b4;
 }
 
 a:hover {
@@ -64,7 +65,7 @@ a:hover {
 
 /* Pre, Code font */
 #content-insert code, #headlines-frame code, .dijitContentPane code {
-	color: #028482;
+	color: #009900;
 	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 	font-size: 12px;
 }
@@ -207,8 +208,8 @@ body#ttrssMain #feedTree:hover {
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
-    text-align: justify;
-    padding: 0 25px;
+    	text-align: justify;
+   	 padding: 0 25px;
 }
 
 /* Items list background color change when hover the mouse */
@@ -223,7 +224,7 @@ body#ttrssMain #feedTree:hover {
 	cursor: pointer;
 }
 
-/* Styling item's attributes: selected, marked, published */
+/* Item attributes color: selected, marked, published */
 ./* select item with content area */
 div.cdmContent, div.postContent {
     background:#FBFAF3;
@@ -238,20 +239,23 @@ div.cdmContent, div.postContent {
     border-width: 1px 0px 1px 0px;
 }
 
-.cdm.expandable:not(.active),
+cdm.expandable.Selected:not(.active),
 .hl.Selected {
-    border-color: #41924b;
+	z-index: 2;
+   	border-color: #41924b;
 	background: #AFEAAA;
 }
 
-.cdm.expandable:not(.active),
+.cdm.expandable.marked:not(.active),
 .hl.marked {
+	z-index: 2;
 	border-color: #E9B31B;
 	background: #FFFF99;
 }
 
-.cdm.expandable:not(.active),
+.cdm.expandable.published:not(.active),
 .hl.published {
+	z-index: 2;
 	border-color: #EF7351;
 	background-color: #ffcccc;
 }
@@ -283,8 +287,31 @@ div.cdmContent, div.postContent {
 	line-height: 1;
 }
 
-div.postReply div.postTitle {
-    white-space:normal;
+/* Feed Group Title Background */
+div.cdmFeedTitle {
+    background-color : #eeeeee !important;
+    border-color: #ddd !important;
+}
+
+/* Items list background color change when hover the mouse */
+#headlines-frame.wide .hl:hover > * {
+	background: transparent; /* only .hlTitle should have background color (next rule) */
+}
+.cdm.expandable:not(.active):hover .cdmHeader,
+.hl:hover > *,
+#headlines-frame.wide .hl:hover > *,
+.collapseBtn:hover {
+	background: rgba(0,0,0,.033);
+	cursor: pointer;
+}
+
+/* Content Panel */
+.postDate, .postTags, .postComments {
+    font-size: 10px;
+}
+
+.postReply .postTitle {
+    white-space: unset !important;
 }
 
 /* Notification */
@@ -360,6 +387,7 @@ div.postReply div.postTitle {
 #notify img[src*='images/cross.png'] {
 	background: url('https://raw.githubusercontent.com/Narga/tt-rss-narga-theme/master/images/close.png') no-repeat;
 }
+
 #notify img[src*='images/alert.png'] {
 	background: url(https://raw.githubusercontent.com/Narga/tt-rss-narga-theme/master/images/ban.png) no-repeat;
 }
